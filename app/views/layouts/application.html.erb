@@ -11,9 +11,11 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="rocketgirl">
-          <%= image_tag 'rocketgirl.png', class: 'img-fluid' %>
-        </div>
+        <%= link_to root_path do %>
+          <div class="rocketgirl">
+            <%= image_tag 'rocketgirl.png', class: 'img-fluid' %>
+          </div>
+        <% end %>
       </div>
       <div class="col-4">
         <p class="grill">
@@ -24,7 +26,7 @@
         </p>
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_memory_path %>
         <%= link_to 'About', "#" %>
       </div>
     </header>
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "Refill please!", "#", class: 'next-memory' %>
+            <%= link_to "Refill please!", root_path, class: 'next-memory' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly served in Tucson, AZ by <a class="footer-link" href="http://jacobdenholtz.getforge.io/">Jacob Denholtz</a><br />

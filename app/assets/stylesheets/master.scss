@@ -45,10 +45,6 @@ header {
   border-bottom: 1px solid black;
 }
 
-hr {
-  clear: both;
-}
-
 h1 {
   font-family: 'instintobold';
   color:black;
@@ -61,4 +57,21 @@ h2 {
 
 body {
   background: #51BC82;
+}
+
+.next-memory {
+  font-family: 'instintobold';
+  color: black;
+  font-size: 20px;
+}
+
+.footer-blurb {
+  font-family: 'instintobold';
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
+}
+
+.footer-link {
+  color: #F7EE5A;
 }

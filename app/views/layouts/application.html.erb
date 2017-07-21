@@ -31,6 +31,24 @@
 
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "Refill please!", "#", class: 'next-memory' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly served in Tucson, AZ by <a class="footer-link" href="http://jacobdenholtz.getforge.io/">Jacob Denholtz</a><br />
+            Want to build your own Splurty Web App - <a class="footer-link" href="http://thefirehoseproject.com"> Learn how to code here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

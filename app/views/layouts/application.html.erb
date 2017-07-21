@@ -9,6 +9,30 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        <div class="rocketgirl">
+          <%= image_tag 'rocketgirlcolor.jpg', class: 'img-fluid' %>
+        </div>
+      </div>
+      <div class="col-4">
+        <p class="grill">
+        GRILL
+        </p>
+        <p class="slogan">
+          Open later than you think
+        </p>
+      </div>
+      <div class="col-5 links">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', "#" %>
+      </div>
+    </header>
+    
+    <hr />
+
+    <br class="clear" />
+
     <%= yield %>
   </body>
 </html>

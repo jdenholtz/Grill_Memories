@@ -5,8 +5,9 @@
 }
 
 header {
-  border-top: 6px solid #000000;
-  background: #418B98;
+  border-top: 6px solid #F7EE5A;
+  border-bottom: 2px solid #58C1A9;
+  background: #51BC82;
 }
 .rocketgirl{
   height: 100px;
@@ -14,14 +15,19 @@ header {
 }
 
 .grill {
+  font-family: 'instintobold';
+  color:black;
   font-style: bold;
   font-size: 50px;
+  letter-spacing: 5px;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .slogan {
+  font-family: 'instintobold';
+  color:black;
   margin: 0;
   padding: 0;
 
@@ -33,6 +39,7 @@ header {
 }
 
 .links a {
+  font-family: 'instintobold';
   color:black;
   font-size: 25px;
   border-bottom: 1px solid black;
@@ -42,3 +49,16 @@ hr {
   clear: both;
 }
 
+h1 {
+  font-family: 'instintobold';
+  color:black;
+}
+
+h2 {
+  font-family: 'instintobold';
+  color:black;
+}
+
+body {
+  background: #51BC82;
+}

@@ -3,7 +3,18 @@ class MemoriesController < ApplicationController
     @memory = Memory.order("RANDOM()").first
   end
 
-  def new
-    @memory = Memory.new
+  def create
+  @memory = Memory.create(memory_params)
+    if @memory.invalid?
+      flash[:error] = '<strong>Could not save</strong> your memory must be a bit fuzzy.'
+    end
+    redirect_to root_path
+  end
+
+
+  private
+
+  def memory_params
+    params.require(:memory).permit(:memory, :author, :relationship)
   end
 end

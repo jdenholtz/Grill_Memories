@@ -17,7 +17,7 @@
           </div>
         <% end %>
       </div>
-      <div class="col-4">
+      <div class="col col-sm-4 hidden-xs-down">
         <p class="grill">
         GRILL
         </p>
@@ -26,12 +26,17 @@
         </p>
       </div>
 
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-        <%= link_to 'About', "#" %>
+        &nbsp;&nbsp;
+        <%= link_to 'About', about_path %>
       </div>
     </header>
+
+
+
+
 
 
 
@@ -47,9 +52,9 @@
           </div>
           <%= simple_form_for Memory.new do |f| %>
             <div class="modal-body">
-              <%= f.input :memory %>
-              <%= f.input :author %>
-              <%= f.input :relationship %>          
+              <%= f.input :memory, label: "What is the memory you wish to add?", placeholder: "the resturaunts ticket spike went through my hand?" %>
+              <%= f.input :author, lable:  "Your name", placeholder: "Jacob Denholtz" %>
+              <%= f.input :relationship, lable: "Were you a patron or an employee?", placeholder: "Employee" %>          
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -74,13 +79,17 @@
 
     <br class="clear" />
 
+
+
+    
+
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "Refill please!", root_path, class: 'next-memory' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             Proudly served in Tucson, AZ by <a class="footer-link" href="http://jacobdenholtz.getforge.io/">Jacob Denholtz</a><br />
             Want to build your own Splurty Web App - <a class="footer-link" href="http://thefirehoseproject.com"> Learn how to code here</a>
           </div>

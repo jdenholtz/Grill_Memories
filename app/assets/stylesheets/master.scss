@@ -46,13 +46,18 @@ header {
 }
 
 h1 {
-  font-family: 'instintobold';
+  font-family: 'nimbus_sans_lbold_italic';
   color:black;
 }
 
 h2 {
-  font-family: 'instintobold';
+  font-family: 'nimbus_sans_lbold';
   color:black;
+}
+
+h1 span{
+  color: #F7EE5A;
+  font-family: 'nimbus_sans_lbold';
 }
 
 body {
@@ -74,4 +79,22 @@ body {
 
 .footer-link {
   color: #F7EE5A;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+  text-align: left;
+  }
+}
+
+.modal {
+  font-family: 'instintobold';
+}
+
+::selection {
+  background-color: #58C1A9;
+}
+
+.about-blurbs {
+font-family: 'nimbus_sans_lbold_italic';  
 }

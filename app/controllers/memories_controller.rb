@@ -4,16 +4,26 @@ class MemoriesController < ApplicationController
   end
 
   def create
-  @memory = Memory.create(memory_params)
-    if @memory.invalid?
-      flash[:error] = '<strong>Could not save</strong> your memory must be a bit fuzzy.'
-    end
+    @memory = Memory.create(memory_params)
+      if @memory.invalid?
+        flash[:error] = '<strong>Could not save</strong> your memory must be a bit fuzzy.'
+      end
     redirect_to root_path
   end
 
   def about
   end
 
+  def menu
+  end
+
+  def rules
+  end
+
+  def counter
+    @memory = Memory.order("created_at").last
+  end
+  
 
   private
 

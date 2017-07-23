@@ -19,13 +19,12 @@
           </div>
         
       </div>
-      <div class="col col-sm-4">
-        <div class="grill align-self-end">
+      <div class="col col-sm-4 grill">
+        <p>
           <%= link_to 'GRILL', rules_path, class: 'egg-link' %>
-        </div>
-        <div class="slogan align-self-start">
-          <%= link_to 'Open later than you think', counter_path, class: 'egg-link' %>
-        </div>
+          <br />
+          <span><%= link_to 'Open later than you think', counter_path, class: 'egg-link' %></span>
+        </p>
       </div>
 
       <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
@@ -54,7 +53,7 @@
           </div>
           <%= simple_form_for Memory.new do |f| %>
             <div class="modal-body">
-              <%= f.input :memory, label: "What is the memory you wish to add?", placeholder: "the resturaunts ticket spike went through my hand?" %>
+              <%= f.input :memory, label: "I remember the time at Grill when...", placeholder: "the resturaunts ticket spike went through my hand!" %>
               <%= f.input :author, label:  "Your name", placeholder: "Jacob Denholtz" %>
               <%= f.input :relationship, label: "What was your relationship with Grill?", placeholder: "Patron, Server, Bartender, Cook..." %>          
             </div>
@@ -84,7 +83,7 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-6 refill">
             <%= link_to "Refill", root_path, class: 'next-memory' %>
           </div>
           <div class="col-12 col-sm-6 footer-blurb">

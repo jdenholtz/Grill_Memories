@@ -53,9 +53,9 @@
           </div>
           <%= simple_form_for Memory.new do |f| %>
             <div class="modal-body">
-              <%= f.input :memory, label: "I remember the time at Grill when...", placeholder: "the resturaunts ticket spike went through my hand!" %>
-              <%= f.input :author, label:  "Your name", placeholder: "Jacob Denholtz" %>
-              <%= f.input :relationship, label: "What was your relationship with Grill?", placeholder: "Patron, Server, Bartender, Cook..." %>          
+              <%= f.input :memory, label: "I remember the time at Grill when... (3-280 characters)", placeholder: "the ticket spike went through my hand!" %>
+              <%= f.input :author, label:  "Your name (2-50 characters)", placeholder: "Your Name" %>
+              <%= f.input :relationship, label: "What was your relationship with Grill? (2-50 characters)", placeholder: "Patron, Server, Bartender, Cook..." %>          
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
